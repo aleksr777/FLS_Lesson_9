@@ -1,0 +1,361 @@
+/* Подключаем шрифты*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj&display=swap");
+
+@import "null.css";
+
+/* Подключаем шрифт font-family: 'Circular Std' */
+@font-face {
+	font-family: "Pangolin";
+	src: url("../fonts/Pangolin-Regular.woff2") format("woff2"), url("../fonts/Pangolin-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: "Oswald", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.63;
+	text-align: left;
+	color: #424551;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container-page1 {
+	padding: 10px;
+	min-width: 820px;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+nav {
+	font-family: "Times New Roman";
+	text-align: center;
+	color: #0011ff;
+	font-size: 20px;
+	margin: 0 0 40px 0;
+}
+
+nav > ul > li {
+	display: inline-block;
+}
+li.nav-li-selected {
+	color: #ffffff;
+	background: #0011ff;
+	white-space: nowrap;
+}
+nav > ul > li.nav-li-selected,
+nav > ul > li > a {
+	display: inline-block;
+	border: 1px solid #0011ff;
+	border-radius: 5px;
+	padding: 0 20px;
+	margin: 0 0 10px 10px;
+	white-space: nowrap;
+}
+nav > ul > li.nav-li-selected:hover,
+nav > ul > li > a:hover {
+	border: 1px solid #00eeff;
+}
+nav > ul > li.nav-li-selected:active,
+nav > ul > li > a:active {
+	border: 1px solid #00eeff;
+	color: #000000;
+	background: #00eeff;
+}
+
+.title-page-1 {
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+.title-page-1:hover {
+	background: url(../img/horor.jpg) 50% / 100% no-repeat;
+	color: #fff;
+}
+.title-page-1:active {
+	background: url(../img/horor.jpg) repeat;
+}
+
+.title-page-1 > h1 {
+	margin: 0 0 26px 0;
+	font-size: 46px;
+	font-weight: 900;
+	color: #1e212c;
+}
+.title-page-1 > h1:hover {
+	opacity: 0.8;
+	color: #fff;
+}
+.title-page-1:hover img {
+	opacity: 0.3;
+}
+.main-page-1 > h2 {
+	text-decoration: overline;
+	font-size: 20px;
+	margin: 0 0 10px 0;
+	font-weight: 700;
+}
+.main-page-1 > p {
+	margin: 0 0 20px 0;
+}
+
+.main-page-1 {
+	padding: 10px;
+}
+
+.game-box {
+	background: #242222;
+	width: 800px;
+	height: 1000px;
+	margin: 0 auto;
+}
+.corridor-1 {
+	width: 50px;
+	height: 100px;
+	margin: 0 0 0 100px;
+	background: #A0A5A3;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 900;
+}
+.corridor-2 {
+	width: 300px;
+	height: 40px;
+	margin: -2px 0 0 100px;
+	visibility: hidden;
+}
+.corridor-3 {
+	width: 30px;
+	height: 250px;
+	margin: 0 0 0 370px;
+	visibility: hidden;
+}
+.corridor-4 {
+	width: 250px;
+	height: 25px;
+	margin: 0 0 0 370px;
+	visibility: hidden;
+}
+.corridor-5 {
+	width: 23px;
+	height: 200px;
+	margin: -225px 0 0 597px;
+	visibility: hidden;
+}
+.corridor-6 {
+	width: 100px;
+	height: 21px;
+	margin: -221px 0 0 597px;
+	visibility: hidden;
+}
+.corridor-7 {
+	width: 19px;
+	height: 400px;
+	margin: 0 0 0 678px;
+	visibility: hidden;
+}
+.corridor-8 {
+	width: 500px;
+	height: 17px;
+	margin: 0 0 0 197px;
+	visibility: hidden;
+}
+.corridor-9 {
+	width: 17px;
+	height: 270px;
+	margin: 0 0 0 197px;
+	visibility: hidden;
+}
+.corridor-10 {
+	width: 300px;
+	height: 17px;
+	margin: 0 0 0 197px;
+	visibility: hidden;
+}
+.corridor-11 {
+	width: 200px;
+	height: 150px;
+	margin: -80px 0 0 497px;
+	visibility: hidden;
+}
+.corridor-11 p {
+	padding: 40px;
+	text-align: center;
+	font-size: 40px;
+	visibility: hidden;
+	background: #60e0ad;
+}
+.corridor-11:hover {
+	background: #60e0ad;
+	visibility: visible;
+}
+.corridor-11:hover p {
+	visibility: visible;
+	background: #60e0ad;
+}
+
+[class*="corridor-"]:hover,
+[class*="corridor-"]:hover + div {
+	visibility:visible;
+	background: #A0A5A3;
+}
+
+footer {
+	padding: 20px;
+	background: #000;
+	color: #fff;
+}
+footer > p {
+	display: inline-block;
+	margin: 0 20px 0 0;
+	white-space: nowrap;
+}
+
+/* Стили для страницы №2 (макет) */
+
+.container-page2 {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+	padding: 10px;
+	min-width: 600px;
+	max-width: 830px;
+	margin: 0 auto;
+}
+
+.header-box {
+	margin: 0 0 60px 0;
+}
+
+.header-box-article-hr-recruting {
+	margin: 0 0 12px 0;
+}
+
+.header-box-article {
+	display: inline-block;
+	color: #424551;
+	white-space: nowrap;
+	background: url(../img/sheet.svg) 0 5px no-repeat;
+	padding: 0 0 0 24px;
+	margin: 0 12px 0 0;
+}
+
+.header-box-hr-recruting {
+	display: inline-block;
+	font-weight: 700;
+	color: #ff3f3a;
+	white-space: nowrap;
+	background: url(../img/divider.svg) 0 5px no-repeat;
+	padding: 0 0 0 15px;
+}
+
+.header-box-title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	color: #1e212c;
+	margin: 0 0 26px 0;
+}
+
+.header-box-date-time-share {
+	margin: 0 0 40px 0;
+}
+
+.header-box-date-time {
+	display: inline-block;
+	text-align: left;
+	width: 49.7%;
+}
+
+.header-box-date {
+	color: #787a80;
+	display: inline-block;
+	white-space: nowrap;
+	background: url(../img/calendar.svg) 0 5px no-repeat;
+	padding: 0 0 0 25px;
+	margin: 0 24px 0 0;
+}
+
+.header-box-time {
+	color: #787a80;
+	display: inline-block;
+	white-space: nowrap;
+	background: url(../img/clock.svg) 0 5px no-repeat;
+	padding: 0 0 0 25px;
+}
+
+.div-share {
+	display: inline-block;
+	text-align: right;
+	width: 49.7%;
+	white-space: nowrap;
+}
+
+.share {
+	display: inline-block;
+	font-weight: 700;
+	color: #1e212c;
+}
+
+.div-share > a {
+	display: inline-block;
+	margin: 0 0 0 12px;
+}
+
+.div-share > a > img.icon {
+	display: inline-block;
+	padding: 2px 0 0 0;
+}
+
+.container-page2 > main > p {
+	margin: 0 0 24px 0;
+}
+
+.container-page2 > main > p:nth-of-type(3) {
+	margin: 0 0 48px 0;
+}
+
+.container-page2 > main > p:last-of-type {
+	margin: 0 0 63px 0;
+}
+
+.text700-1 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #1e212c;
+}
+
+.container-page2 > main > p.text700-2 {
+	padding: 0 0 0 58px;
+	margin: 0 0 48px 0;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #1e212c;
+	background: url(../img/quotes.svg) 0 0 / 28px 20px no-repeat;
+}
+
+.container-page2 > main > ul.list {
+	margin: 0 0 24px 0;
+}
+
+.container-page2 > main > ul.list > li.list-li {
+	padding: 0 0 0 32px;
+	background: url(../img/check.svg) 0 6px / 16px no-repeat;
+}
+
+li.list-li:not(:last-of-type) {
+	margin-bottom: 4px;
+}
