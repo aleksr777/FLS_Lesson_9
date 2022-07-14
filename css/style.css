@@ -37,42 +37,6 @@ img {
 	max-width: 100%;
 }
 
-nav {
-	font-family: "Times New Roman";
-	text-align: center;
-	color: #0011ff;
-	font-size: 20px;
-	margin: 0 0 40px 0;
-}
-
-nav > ul > li {
-	display: inline-block;
-}
-li.nav-li-selected {
-	color: #ffffff;
-	background: #0011ff;
-	white-space: nowrap;
-}
-nav > ul > li.nav-li-selected,
-nav > ul > li > a {
-	display: inline-block;
-	border: 1px solid #0011ff;
-	border-radius: 5px;
-	padding: 0 20px;
-	margin: 0 0 10px 10px;
-	white-space: nowrap;
-}
-nav > ul > li.nav-li-selected:hover,
-nav > ul > li > a:hover {
-	border: 1px solid #00eeff;
-}
-nav > ul > li.nav-li-selected:active,
-nav > ul > li > a:active {
-	border: 1px solid #00eeff;
-	color: #000000;
-	background: #00eeff;
-}
-
 .title-page-1 {
 	text-align: center;
 	margin: 0 0 30px 0;
